@@ -1,0 +1,353 @@
+.staff {
+   width: 100vw;
+   height: 90vh;
+   background-color: #444;
+   position: relative;
+   animation: staff_intro_animation 1s;
+}
+
+.staff__background {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.5;
+   filter: blur(4px);
+   display: block;
+}
+.staff__img {
+   width: 60%;
+   height: 100%;
+   object-fit: contain;
+   position: relative;
+   display: block;
+}
+
+.staff__info {
+   position: relative;
+   top: -165%;
+   left: 10%;
+   width: 25%;
+   text-align: center;
+   color: #fff;
+}
+
+.staff__info_name {
+   font-size: 3em;
+   font-weight: bold;
+}
+
+.staff__info_job {
+   font-size: 1.5em;
+}
+
+.staff__info_description {
+   display: block;
+   position: relative;
+   top: 6vh;
+   text-shadow: 1px 1px 5px #000;
+   display: inline-block;
+}
+
+.staff__info_social {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   list-style: none;
+   position: relative;
+   top: 13vh;
+}
+
+.staff__info_social * {
+   color: #fff;
+   font-size: 1.2em;
+   text-decoration: none;
+}
+@keyframes staff_intro_animation {
+   0% {
+      transform: translateX(100%);
+   }
+   100% {
+      transform: translateX(0);
+   }
+}
+
+
+#maxgatiks {
+   background: linear-gradient(to right, #008b45 0%, #68ce37 100%);
+}
+
+#maxgatiks .staff__img {
+   top: -100%;
+   left: 55%;
+   width: 30%;
+}
+#maxgatiks .staff__img1 {
+   top: -200%;
+   position: relative;
+   left: 55%;
+   width: 30%;
+   height: 100%;
+   object-fit: contain;
+   position: relative;
+   display: block;
+   animation: maxleft 1s ease-in-out infinite;
+}
+#maxgatiks .staff__img2 {
+   top: -300%;
+   position: relative;
+   left: 55%;
+   width: 30%;
+   height: 100%;
+   object-fit: contain;
+   position: relative;
+   display: block;
+   animation: maxright 1s ease-in-out infinite;
+}
+#maxgatiks .staff__info {
+   position: relative;
+   top: -365%;
+   left: 10%;
+   width: 25%;
+   text-align: center;
+   color: #fff;
+}
+@keyframes maxleft {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(-5deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+@keyframes maxright {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(5deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+#sint {
+   background: linear-gradient(to right, #00aeff 0%, #ffd000 100%);
+}
+
+#sint .staff__img {
+   top: -100%;
+   left: 40%;
+   animation: sint 2s ease-in-out infinite;
+}
+@keyframes sint {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-10px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+#onick {
+   background: linear-gradient(to right, #46217b 0%, #333 100%);
+}
+
+#onick .staff__img {
+   top: -100%;
+   left: 40%;
+}
+#onick .staff__img1 {
+   position: relative;
+   top: -200%;
+   left: 40%;
+   width: 60%;
+   height: 100%;
+   object-fit: contain;
+   display: block;
+   animation: onick 2s ease-in-out infinite;
+}
+#onick .staff__info  {
+   top: -265%;
+}
+@keyframes onick {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+#kenshyn {
+   background: linear-gradient(to right, #68ce37 0%, #008b45 100%);
+}
+
+#kenshyn .staff__img {
+   width: 30%;
+   top: -95%;
+   height: 95%;
+   left: 58%;
+   animation: kenshyn 4s infinite;
+}
+
+@keyframes kenshyn {
+   0% {
+      transform: rotate(-5deg);
+   }
+   50% {
+      transform: rotate(10deg);
+   }
+   100% {
+      transform: rotate(-5deg);
+   }
+}
+
+#nexiar {
+   background: linear-gradient(to left, #29E2B2 0%, #37A4D5 100%);
+}
+
+#nexiar .staff__img {
+   top: -100%;
+   left: 60%;
+   height: 95%;
+   width: 22%;
+   animation: nexiar 2s ease-in-out infinite;
+}
+@keyframes nexiar {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(-6deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+#unbending {
+   background: linear-gradient(to right, #FFA200 0%, #00BDFF 100%);
+}
+
+#unbending .staff__img {
+   top: -100%;
+   left: 60%;
+   height: 80vh;
+   width: 23%;
+   animation: unbending 1.5s ease-in-out infinite;
+}
+@keyframes unbending {
+   0% {
+      transform: translateX(0);
+   }
+   50% {
+      transform: translateX(20px);
+   }
+   100% {
+      transform: translateX(0);
+   }
+}
+
+
+@media only screen and (max-width: 1024px) {
+   .staff__info {
+      top: -100%;
+      left: 5%;
+      width: 90%;
+   }
+   
+   .staff__info_name {
+      font-size: 2em;
+      font-weight: bold;
+   }
+   
+   .staff__info_job {
+      font-size: 1em;
+   }
+   
+   .staff__info_description {
+      font-size: .9em;
+   }
+   
+   .staff__info_social {
+      top: 18vh;
+   }
+
+   #maxgatiks .staff__img {
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 50%;
+   }
+   #maxgatiks .staff__img1 {
+      top: -150%;
+      left: 0;
+      width: 100%;
+      height: 50%;
+   }
+   #maxgatiks .staff__img2 {
+      top: -200%;
+      left: 0;
+      width: 100%;
+      height: 50%;
+   }
+   #maxgatiks .staff__info {
+      top: -200%;
+      left: 5%;
+      width: 90%;
+   }
+
+   #sint .staff__img {
+      width: 100%;
+      height: 50%;
+      left: 0;
+   }
+
+
+   #onick .staff__img {
+      width: 100%;
+      height: 50%;
+      left: 0;
+   }
+   #onick .staff__img1 {
+      top: -150%;
+      width: 100%;
+      height: 50%;
+      left: 0;
+   }
+   #onick .staff__info  {
+      top: -150%;
+      left: 5%;
+   }
+
+
+   #kenshyn .staff__img {
+      width: 60%;
+      height: 50%;
+      left: 20%;
+      top: -100%;
+   }
+
+
+   #nexiar .staff__img {
+      width: 30%;
+      height: 50%;
+      left: 37%;
+   }
+
+
+   #unbending .staff__img {
+      width: 30%;
+      height: 50%;
+      left: 35%;
+   }
+}

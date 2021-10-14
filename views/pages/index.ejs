@@ -1,0 +1,47 @@
+<html>
+   <%- include('../parts/head', {title:'Bifrost Network', styles:'<link rel="stylesheet" href="styles/index.css">'}) %>
+   <body>
+      <%- include('../parts/header') %>
+      <%- include('../parts/navbar', {active: 'inicio'}) %>
+      <div class="block" id="block__bifrost">
+         <img src="img/lobby.png" alt="lobby.png" id="block__bifrost-lobby" loading="lazy">
+         <img src="img/bifrost-icon.png" alt="bifrost-icon.png" id="block__bifrost-icon" loading="lazy">
+         <p>Bifröst es un servidor de minecraft que está iniciando, el cual se basa en una temática nórdica, además soporta múltiples versiones del juego. [1.8 - 1.17.1]</p>
+      </div>
+      <div class="block" id="block__skywars">
+         <div class="carusel">
+            <img src="img/skywars/1.png" alt="skywars1.png" class="sw-img" loading="lazy">
+            <img src="img/skywars/2.png" alt="skywars2.png" class="sw-img" loading="lazy">
+            <img src="img/skywars/3.png" alt="skywars3.png" class="sw-img" loading="lazy">
+            <img src="img/skywars/4.png" alt="skywars4.png" class="sw-img" loading="lazy">
+         </div>
+         <p class="arrow-sliner izq-slider" onclick="swPush(-1)"><i class="fas fa-chevron-left"></i></p>
+         <p class="arrow-sliner der-slider" onclick="swPush(+1)"><i class="fas fa-chevron-right"></i></p>
+         <div id="sw_info">
+            <p id="block__skywars_title">Skywars - [1.8 - 1.17.1]</p>
+            <p id="block__skywars_desc">
+               Lucha entre islas construyendo, equipandote y derrotando a los contrincantes hasta ganar y ser el mejor.
+            </p>
+         </div>
+      </div>
+      <div class="block" id="block_survival">
+         <div class="carusel">
+            <img src="img/survival/1.png" alt="skywars1.png" class="sv-img" loading="lazy">
+            <img src="img/survival/2.png" alt="skywars2.png" class="sv-img" loading="lazy">
+            <img src="img/survival/3.png" alt="skywars3.png" class="sv-img" loading="lazy">
+            <img src="img/survival/4.png" alt="skywars4.png" class="sv-img" loading="lazy">
+         </div>
+         <p class="arrow-sliner izq-slider" onclick="svPush(-1)"><i class="fas fa-chevron-left"></i></p>
+         <p class="arrow-sliner der-slider" onclick="svPush(+1)"><i class="fas fa-chevron-right"></i></p>
+         <div id="sv_info">
+            <p id="block__surv_title">Survival - [1.17.1]</p>
+            <p id="block__surv_desc">
+               Explora, construye y diviértete en un sin fin de oportunidades, enfretandote a distintos misterios y luchando contra criaturias hostiles que almenacena a tu guerrero en su interior.
+            </p>
+         </div>
+      </div>
+      <%- include('../parts/footer') %>
+      <script src="js/main.js"></script>
+      <script src="js/index.js"></script>
+   </body>
+</html>

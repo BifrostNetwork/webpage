@@ -1,0 +1,38 @@
+<button onclick="toggleIndice()" id="dropNav"><i class="fas fa-bars"></i></button>
+
+<div class="wikinav">
+   <a href="/" id="bifrost"><img src="/img/background.png" alt="background.png"></a>
+   <button class="dropdown-btn <% if(actives.includes('mobs')){ %> active-nav <% } %>">Mobs<i class="fa fa-caret-left"></i></button>
+   <div class="dropdown-container <% if(actives.includes('mobs')){ %> active-cont <% } %>">
+      <a href="#">Cuero Antiguo</a>
+      <a href="#">El imortal</a>
+      <a href="#">El dios del fuego</a>
+    </div>
+   <button class="dropdown-btn <% if(actives.includes('items')){ %> active-nav <% } %>">Items<i class="fa fa-caret-left"></i></button>
+   <div class="dropdown-container <% if(actives.includes('items')){ %> active-cont <% } %>">
+      <button class="dropdown-btn <% if(actives.includes('items-comunes')){ %> active-nav <% } %>">Comunes<i class="fa fa-caret-left"></i></button>
+      <div class="dropdown-container <% if(actives.includes('items-comunes')){ %> active-cont <% } %>">
+      </div>
+      <button class="dropdown-btn <% if(actives.includes('items-raros')){ %> active-nav <% } %>">Raros<i class="fa fa-caret-left"></i></button>
+      <div class="dropdown-container <% if(actives.includes('items-raros')){ %> active-cont <% } %>">
+      </div>
+      <button class="dropdown-btn <% if(actives.includes('items-epicos')){ %> active-nav <% } %>">Epicos<i class="fa fa-caret-left"></i></button>
+      <div class="dropdown-container <% if(actives.includes('items-epicos')){ %> active-cont <% } %>">
+      </div>
+      <button class="dropdown-btn <% if(actives.includes('items-legendarios')){ %> active-nav <% } %>">Legendarios<i class="fa fa-caret-left"></i></button>
+      <div class="dropdown-container <% if(actives.includes('items-legendarios')){ %> active-cont <% } %>">
+      </div>
+   </div>
+   <button class="dropdown-btn <% if(actives.includes('crafteos')){ %> active-nav <% } %>">Crafteos<i class="fa fa-caret-left"></i></button>
+   <div class="dropdown-container <% if(actives.includes('crafteos')){ %> active-cont <% } %>">
+      <a href="#">Vaca Lola</a>
+      <a href="#">El imortal</a>
+      <a href="#">El dios del fuego</a>
+   </div>
+   <button class="dropdown-btn <% if(actives.includes('otros')){ %> active-nav <% } %>">otros<i class="fa fa-caret-left"></i></button>
+   <div class="dropdown-container <% if(actives.includes('otros')){ %> active-cont <% } %>">
+      <a href="#">Vaca Lola</a>
+      <a href="#">El imortal</a>
+      <a href="#">El dios del fuego</a>
+   </div>
+ </div>

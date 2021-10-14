@@ -1,0 +1,18 @@
+<html>
+   <%- include('../parts/head', {title:'Bifrost Network', styles:'<link rel="stylesheet" href="styles/wiki.css">'}) %>
+   <body>
+      <%- include('../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../parts/wiki/wikiNav', { actives: ["mobs", "items", "crafteos"] }) %>
+
+      <div class="content">
+         <h1 class="col-md4 row-md8" style="background: #ddd;">asdasd</h1>
+         <h1 class="col-md4 row-md8" style="background: #333;">asdasd</h1>
+         <h1 class="col-md4 row-md8" style="background: #f00;">asdasd</h1>
+      </div>
+      
+      <%- include('../parts/footer') %>
+      <script src="js/main.js"></script>
+      <script src="js/wiki.js"></script>
+   </body>
+</html>

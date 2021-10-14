@@ -1,0 +1,252 @@
+.footer {
+   width: 75%;
+   position: relative;
+   left: 25%;
+}
+#menu {
+   position: relative;
+}
+
+.wikinav {
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   background: #e8f5ff;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   height: 90vh;
+   animation: dropdownAnimation 1s;
+   margin: 0;
+   position: fixed;
+   padding-bottom: 10vh;
+}
+
+.wikinav i {
+   padding-left: 2%;
+}
+
+#bifrost {
+   width: 100%;
+   height: 10vh;
+}
+#bifrost > img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.dropdown-container > .dropdown-container {
+   margin: 0;
+}
+
+.dropdown-container > * {
+   display: block;
+   width: 100%;
+   border: none;
+   font-size: 1.2vw;
+   margin: 0;
+   text-decoration: none;
+   background: #e8f5ff;
+   color: #333;
+}
+
+.dropdown-btn {
+   width: 100%;
+   height: 6vh;
+   border: none;
+   background-color: #0067b6;
+   font-size: 1.4vw;
+   color: #fff;
+   text-align: left;
+   transition: .2s;
+   padding-left: 1vw;
+   cursor: pointer;
+}
+.dropdown-btn:hover {
+   background-color: #0378d1;
+}
+
+.dropdown-container > * {
+   padding-left: 8px;
+   position: relative;
+}
+
+.dropdown-container > .dropdown-btn {
+   border-bottom: #0067b6 solid 4px;
+   background: #e8f5ff;
+   color: #333;
+   font-weight: bold;
+   padding-left: 0;
+}
+.dropdown-container {
+   display: none;
+   height: auto;
+   margin: 1vh 0;
+   animation: dropdownAnimation .4s;
+   z-index: 0;
+}
+
+@keyframes dropdownAnimation {
+   0% {
+      transform: translateX(-100%);
+   }
+   100% {
+      transform: translateX(0%);
+   }
+}
+
+.active-nav {
+   background: #0089f1;
+}
+.active-cont {
+   display: block;
+}
+
+.active-nav > i {
+   transform: rotate(-90deg) translateX(-25%) translateY(50%);
+   animation: activeNavI .4s;
+}
+@keyframes activeNavI {
+   0% {
+      transform: rotate(0) translateX(0) translateY(0);
+   }
+   100% {
+      transform: rotate(-90deg) translateX(-25%) translateY(50%);
+   }
+}
+
+#dropNav {
+   display: none;
+}
+
+.hidden-nav {
+   animation: hideNav 1s;
+   transform: translateX(-100%);
+   display: block;
+}
+
+@keyframes hideNav {
+   0% {
+      transform: translateX(0%);
+      opacity: 1;
+   }
+   100% {
+      transform: translateX(-100%);
+      opacity: 0;
+   }
+}
+
+.content {
+   width: 75%;
+   position: relative;
+   z-index: -1;
+   left: 25%;
+   background: #f0f;
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+}
+
+@media only screen and (max-width: 1024px) {
+   .content {
+      width: 100%;
+      left: 0;
+   }
+   .wikinav {
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+   }
+   .footer {
+      left: 0;
+   }
+   .dropdown-btn {
+      font-size: 2.3vh;
+   }
+   .dropdown-container > * {
+      font-size: 2.2vh;
+   }
+   #dropNav {
+      display: block;
+      font-size: 9vh;
+      border: none;
+      padding: 1vh;
+      position: absolute;
+      top: 10vh;
+      color: #fff;
+      background: #333;
+      right: 0;
+      z-index: 150;
+   }
+}
+
+
+
+.col-md1 {
+   grid-column: auto / span 1;
+}
+.col-md2 {
+   grid-column: auto / span 2;
+}
+.col-md3 {
+   grid-column: auto / span 3;
+}
+.col-md4 {
+   grid-column: auto / span 4;
+}
+.col-md5 {
+   grid-column: auto / span 5;
+}
+.col-md6 {
+   grid-column: auto / span 6;
+}
+.col-md7 {
+   grid-column: auto / span 7;
+}
+.col-md8 {
+   grid-column: auto / span 8;
+}
+.col-md9 {
+   grid-column: auto / span 9;
+}
+.col-md10 {
+   grid-column: auto / span 10;
+}
+.col-md11 {
+   grid-column: auto / span 11;
+}
+.col-md12 {
+   grid-column: auto / span 12;
+}
+
+.row-md1 {
+   height: 10vh;
+}
+.row-md2 {
+   height: 20vh;
+}
+.row-md3 {
+   height: 30vh;
+}
+.row-md4 {
+   height: 40vh;
+}
+.row-md5 {
+   height: 50vh;
+}
+.row-md6 {
+   height: 60vh;
+}
+.row-md7 {
+   height: 70vh;
+}
+.row-md8 {
+   height: 80vh;
+}
+.row-md9 {
+   height: 90vh;
+}
+.row-md10 {
+   height: 100vh;
+}

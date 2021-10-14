@@ -1,0 +1,16 @@
+<html>
+   <%- include('../../../parts/head', {title:'Bifrost Network', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "comunes", "item-armadurax", "item-templete"] }) %>
+
+      <div class="content">
+         <h1 class="col-md12 row-md1" style="background: #ddd;">Example</h1>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>

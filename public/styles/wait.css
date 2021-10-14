@@ -1,0 +1,190 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+@font-face {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 400;
+   src:
+     url(/fonts/EnchantedLand.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Tolerant';
+   font-style: normal;
+   font-weight: 400;
+   src:
+     url(/fonts/Tolerant.ttf);
+}
+
+body {
+   background: #ddd;
+   overflow-x: hidden;
+   overflow-x: hidden;
+}
+
+#border {
+   border: #fff solid .2em;
+   width: calc(100vw - 3em);
+   height: calc(100vh - 3em);
+   position: fixed;
+   animation: text-entry 4s;
+   top: 1.5em;
+   left: 1.5em;
+}
+
+#background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   filter: blur(10px);
+   animation: back-entry 4s;
+   z-index: -1;
+}
+
+@keyframes back-entry {
+   0% {
+      opacity: 25%;
+      transform: scale(1.1);
+      filter: blur(0);
+   }
+   25% {
+      opacity: 100%;
+      transform: scale(1);
+      filter: blur(0);
+   }
+   100% {
+      opacity: 100%;
+      transform: scale(1);
+      filter: blur(10px);
+   }
+}
+
+#text {
+   color: #fff;
+   text-align: center;
+   animation: text-entry 4s;
+   position: fixed;
+   top: 10vh;
+   width: 100vw;
+   font-family: 'Anton';
+}
+
+#text > h1 {
+   font-family: 'Enchanted Land';
+   font-size: 5em;
+   text-shadow: 1px 1px 0 #000;
+}
+
+#text > h2 {
+   position: relative;
+   top: 10vh;
+   font-size: 9em;
+}
+
+#countdown {
+   display: grid;
+   width: 50vw;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   position: relative;
+   left: 25vw;
+   top: 10vh;
+}
+
+.simply-section {
+   width: 80%;
+   margin: 0 10%;
+   color: #fff;
+   text-shadow: 2px 2px 0 #000;
+}
+.simply-section > div {
+   grid-template-columns: 1fr;
+   display: grid;
+}
+.simply-section > div > span {
+   margin: 1vh 0;
+   font-size: 2em;
+}
+
+@keyframes text-entry {
+   0% {
+      opacity: 0;
+   }
+   30% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 100%;
+   }
+}
+
+.hiden {
+   display: none;
+}
+
+#video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+#author {
+   font-size: 1.5em;
+   position: fixed;
+   top: auto;
+   bottom: 2em;
+   left: 1vw;
+   width: 100vw;
+   text-align: center;
+}
+
+#maxgatiks {
+   font-family: 'Tolerant';
+   font-size: 3em;
+   text-shadow: 0 0 5px #00aa00;
+}
+#music {
+   position: fixed;
+   top: auto;
+   bottom: 1em;
+   left: 1.5em;
+   font-size: 2em;
+   cursor: pointer;
+   transition: .4s;
+}
+
+#music:hover {
+   text-shadow: 0 0 5px #00aa00;
+}
+
+@media screen and (max-width: 1000px) {
+   #countdown {
+      width: 90vw;
+      left: 5vw;
+      top: 8vh;
+   }
+   
+   .simply-section {
+      margin: 0 10%;
+   }
+   .simply-section > div > span {
+      margin: 1vh 0;
+      font-size: 4vw;
+   }
+
+   #author {
+      font-size: 1.45em;
+      position: fixed;
+      top: auto;
+      bottom: .5em;
+   }
+   #music {
+      bottom: 4em;
+   }
+}
