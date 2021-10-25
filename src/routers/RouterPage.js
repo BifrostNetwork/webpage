@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-var date = new Date(1635541200000);
+var date = new Date(1635627600000);
 
 const preview = (req, res, next) => {
     if(Date.now() > date.getTime()){
@@ -34,6 +34,10 @@ router.get('/staff', (req, res) => {
 //reditects
 router.get('/discord', (req, res) => {
     res.redirect('https://discord.gg/pvcBYFzxe7');
+});
+
+router.get('/twitter', (req, res) => {
+    res.redirect('https://twitter.com/Bifrost_Network');
 });
 
 

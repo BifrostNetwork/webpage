@@ -6,7 +6,57 @@
       <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "comunes", "item-armadurax", "item-templete"] }) %>
 
       <div class="content">
-         <h1 class="col-md12 row-md1" style="background: #ddd;">Example</h1>
+         <h1 id="item" class="col-md8 row-md1 xxfont-large font-while text-center pading-4">Pico mitico</h1>
+         <img src="/img/wiki/items/templete/item.gif" class="col-md3 row-md5 img-content" alt="">
+         <div class="col-md8 row-md4 font-medium">
+            <p class="font-while">
+               <b>Nombre:</b> Templete<br><br>
+               <b>Categoria:</b> Común<br><br>
+               <b>Lore:</b><br><img src="/img/wiki/items/templete/lore.png" class="img-content width-50 lore" alt="lore.png">
+            </p>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Funciones del item</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Con click izquierdo picas 3x3 bloques.</li>
+               <li><br>Con click derecho te aumenta 3 corazones de vida, tiene un cooldown de 3 segundos.</li>
+               <li><br>Cuando picas 15 segundos seguidos te da fatiga minera por 3 segundos.</li>
+               <li><br>Sirve como base para mejorar otros items.</li>
+            </ul>
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Formas de conseguirlo</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Craftearlo.</li>
+               <li><br>Mineria de 3x3 bloques de una sola.</li>
+               <li><br>Tiene pito y pupa.</li>
+            </ul>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="craft-conditions col-md6" id="crafting">
+            <h2 class="font-while text-center font-xlarge">Condiciones de Fabricacion</h2>
+            <p class="font-while">
+               <br>
+               <b>Nivel de experiencia:</b> 10<br>
+               <b>Coste de dinero:</b> 0<br>
+               <b>Tiempo del dia:</b> Noche (13 000 tiks del día en adelante)<br>
+               <b>Tiempo del clima:</b> Tormenta<br>
+               <b>Bioma:</b> No definido<br>
+               <b>Delay:</b> No definido<br>
+               <b>Rango minimo:</b> No definido<br>
+               <b>Dimencion:</b> Todas<br><br>
+               <b>Materiales:</b>
+               <ul class="font-small pading-2">
+                  <li><a href="/wiki/items/iron" class="font-while">Iron <b>(x3)</b></a></li>
+                  <li><a href="/wiki/items/sticks" class="font-while">Sticks <b>(x2)</b></a></li>
+               </ul>
+            </p>
+         </div>
+         <div class="crafteo col-md6">
+            <b class="font-while">Reseta:</b>
+            <img src="/img/wiki/items/templete/crafteo.png" class="img-content" alt="crafteo.png">
+         </div>
       </div>
       
       <%- include('../../../parts/footer') %>

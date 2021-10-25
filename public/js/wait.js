@@ -1,18 +1,17 @@
-let date = new Date(1635541200000);
-
-setInterval(() => {
-    if(Date.now() > date.getTime()) {
-        window.location.href = '/';
-    }
-}, 1000)
-
+const date = new Date(1635627600000);
+var year = date.getFullYear();
+var month = date.getMonth() + 1;
+var day = date.getDate();
+var hour = date.getHours();
+var minute = date.getMinutes();
+var second = date.getSeconds();
 simplyCountdown('#countdown', {
-   year: 2021,
-   month: 10,
-   day: 20,
-   hours: 21,
-   minutes: 0,
-   seconds: 0,
+   year,
+   month,
+   day,
+   hours: hour,
+   minutes: minute,
+   seconds: second,
    words: {
        days: { singular: 'Dia', plural: 'Dias' },
        hours: { singular: 'Hora', plural: 'Horas' },
@@ -32,6 +31,12 @@ simplyCountdown('#countdown', {
    zeroPad: false,
    countUp: false
 });
+
+setInterval(() => {
+    if(Date.now() > date.getTime()) {
+        window.location.href = '/';
+    }
+}, 1000)
 
 const start = () => {
     setTimeout(() => {

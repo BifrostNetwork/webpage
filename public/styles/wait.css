@@ -3,7 +3,7 @@
    padding: 0;
 }
 @font-face {
-   font-family: 'Open Sans';
+   font-family: 'EnchantedLand';
    font-style: normal;
    font-weight: 400;
    src:
@@ -74,7 +74,7 @@ body {
 }
 
 #text > h1 {
-   font-family: 'Enchanted Land';
+   font-family: 'EnchantedLand';
    font-size: 5em;
    text-shadow: 1px 1px 0 #000;
 }
