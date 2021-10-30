@@ -1,0 +1,127 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+}
+
+.cosito {
+   position: absolute;
+   top: 40vh;
+   width: 15vw;
+   left: 1vw;
+}
+#video {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   position: absolute;
+   top: 0;
+}
+#imgFinal {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   position: absolute;
+   top: 0;
+   display: none;
+}
+
+#countdown {
+   display: grid;
+   width: 15vw;
+   height: 10vh;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   text-align: center;
+}
+
+.simply-section {
+   width: 80%;
+   margin: 0 10%;
+   color: #fff;
+   text-shadow: 0px 0px 8px #000;
+}
+.simply-section > div {
+   grid-template-columns: 1fr;
+   display: grid;
+}
+.simply-section > div > span {
+   margin: 1vh 0;
+}
+.simply-amount {
+   font-weight: bold;
+   font-size: 20px;
+}
+.simply-word {
+   font-size: 18px;
+}
+.bifrost-icon {
+   width: 15vw;
+   height: 10vh;
+   position: relative;
+   object-fit: contain;
+   animation: bifrost-icon 5s ease-in-out infinite;
+}
+@keyframes bifrost-icon {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(10px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+#explotion {
+   position: absolute;
+   top: 40vh;
+   width: 15vw;
+   height: 20vh;
+   background: #000;
+   transition: .3s;
+   animation: explotion1 1s ease-in-out;
+   box-shadow: 0px 0px 10px #fff;
+   border-radius: 1em;
+}
+@keyframes explotion1 {
+   0% {
+      transform: scale(0);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+@keyframes explotion2 {
+   0% {
+      left: 0;
+   }
+   100% {
+      left: 42vw;
+   }
+}
+
+@keyframes explotion {
+   0% {
+      transform: scale(0);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+@keyframes implotion {
+   0% {
+      transform: scale(1);
+   }
+   100% {
+      transform: scale(0);
+   }
+}
+.implotion {
+   animation: implotion 1s ease-in-out;
+   transform: scale(0);
+}
+
+.hidden {
+   display: none;
+}

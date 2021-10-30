@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-var date = new Date(1635627600000);
+var date = new Date(1635633000000);
 
 const preview = (req, res, next) => {
     if(Date.now() > date.getTime()){
@@ -23,6 +23,9 @@ router.get('/wait', (req, res) => {
     res.render('pages/wait', {
         active: 'espera'
     });
+});
+router.get('/wait-obs', (req, res) => {
+    res.render('pages/obs');
 });
 
 router.get('/staff', (req, res) => {
