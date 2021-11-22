@@ -1,0 +1,41 @@
+<html>
+   <%- include('../../../parts/head', {title:'Bifrost Network', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "items-raros", "CarnePigi"] }) %>
+
+      <div class="content">
+         <div class="col-md12 height-md1"></div>
+         <h1 id="item" class="col-md8 row-md1 xxfont-large font-while text-center pading-4">Carne Pigi</h1>
+         <img src="/img/wiki/items/CarnePigi/item.png" class="col-md3 row-md5 img-content" alt="">
+         <div class="col-md8 row-md4 font-medium">
+            <p class="font-while">
+               <b>Nombre:</b> Carne Pigi<br><br>
+               <b>Categoria:</b> Raro<br><br>
+               <b>Lore:</b><br><img src="/img/wiki/items/CarnePigi/lore.png" class="img-content width-50 lore" alt="lore.png">
+            </p>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Funciones del item</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Materia prima de <a href="epico-casco-pigi" class="font-fff font-bold">Casco Pigi</a>.</li><br>
+               <li>Materia prima de <a href="epico-peto-pigi" class="font-fff font-bold">Peto Pigi</a>.</li><br>
+               <li>Materia prima de <a href="epico-pantalones-pigi" class="font-fff font-bold">Pantalones Pigi</a>.</li><br>
+               <li>Materia prima de <a href="epico-pantuflas-pigi" class="font-fff font-bold">Pantuflas Pigi</a>.</li><br>
+            </ul>
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Formas de conseguirlo</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Matando a <a href="/wiki/mobs/MaestroPigi" class="font-fff font-bold">Maestro Pigi</a>.</li>
+            </ul>
+         </div>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>

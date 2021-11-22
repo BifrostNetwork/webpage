@@ -13,43 +13,42 @@
       </div>
       <button class="dropdown-btn <% if(actives.includes('protecciones-cmds')){ %> active-nav <% } %>">Comandos<i class="fa fa-caret-left"></i></button>
       <div class="dropdown-container <% if(actives.includes('protecciones-cmds')){ %> active-cont <% } %>">
-         <a href="/wiki/protecciones/cmds-añadirUser" class="<% if(actives.includes('protecciones-cmds-adduser')){ %> active-item <% } %>">Añadir a un usuario</a>
-         <a href="/wiki/protecciones/cmds-removerUser" class="<% if(actives.includes('protecciones-cmds-remvuser')){ %> active-item <% } %>">Remover a un usuario</a>
-         <a href="/wiki/protecciones/cmds-añadirOwner" class="<% if(actives.includes('protecciones-cmds-addowner')){ %> active-item <% } %>">Añadir a un dueño</a>
-         <a href="/wiki/protecciones/cmds-removerOwner" class="<% if(actives.includes('protecciones-cmds-remvuser')){ %> active-item <% } %>">Remover a un dueño</a>
+         <a href="/wiki/protecciones/cmds-modificar-miembros" class="<% if(actives.includes('protecciones-cmds-modificar-miembros')){ %> active-item <% } %>">Añadir/Quitar a un usuario</a>
+         <a href="/wiki/protecciones/cmds-añadirOwner" class="<% if(actives.includes('protecciones-cmds-modificar-dueño')){ %> active-item <% } %>">Añadir/Quitar a un dueño</a>
       </div>
    </div>
    <button class="dropdown-btn <% if(actives.includes('mobs')){ %> active-nav <% } %>">Mobs<i class="fa fa-caret-left"></i></button>
    <div class="dropdown-container <% if(actives.includes('mobs')){ %> active-cont <% } %>">
-      <a href="#">Cuero Antiguo</a>
-      <a href="#">El imortal</a>
-      <a href="#">El dios del fuego</a>
+      <a class="<% if(actives.includes('HerreroVanaheim')){ %> active-item <% } %>" href="/wiki/mobs/HerreroVanaheim">Herrero de Vanaheim</a>
+      <a class="<% if(actives.includes('KamikazeDelBifrost')){ %> active-item <% } %>" href="/wiki/mobs/KamikazeDelBifrost">Kamikaze Del Bifrost</a>
+      <a class="<% if(actives.includes('MaestroPigi')){ %> active-item <% } %>" href="/wiki/mobs/MaestroPigi">Maestro Pigi</a>
+      <a class="<% if(actives.includes('VerdugoNordico')){ %> active-item <% } %>" href="/wiki/mobs/VerdugoNordico">Verdugo Nordico</a>
+      <a class="<% if(actives.includes('VikingoAntiguo')){ %> active-item <% } %>" href="/wiki/mobs/VikingoAntiguo">Vikingo Antiguo</a>
    </div>
    <button class="dropdown-btn <% if(actives.includes('items')){ %> active-nav <% } %>">Items<i class="fa fa-caret-left"></i></button>
    <div class="dropdown-container <% if(actives.includes('items')){ %> active-cont <% } %>">
       <button class="dropdown-btn <% if(actives.includes('items-comunes')){ %> active-nav <% } %>">Comunes<i class="fa fa-caret-left"></i></button>
       <div class="dropdown-container <% if(actives.includes('items-comunes')){ %> active-cont <% } %>">
+         <a class="<% if(actives.includes('CueroAntiguo')){ %> active-item <% } %>" href="/wiki/items/comun-cuero-antiguo">Cuero Antiguo</a>
+         <a class="<% if(actives.includes('PatataDeLosAlfafolk')){ %> active-item <% } %>" href="/wiki/items/comun-patata-de-los-alfafolk">Patata De Los Alfafolk</a>
       </div>
       <button class="dropdown-btn <% if(actives.includes('items-raros')){ %> active-nav <% } %>">Raros<i class="fa fa-caret-left"></i></button>
       <div class="dropdown-container <% if(actives.includes('items-raros')){ %> active-cont <% } %>">
+         <a class="<% if(actives.includes('AleacionNordica')){ %> active-item <% } %>" href="/wiki/items/raro-aleacion-nordica">Aleacion Nordica</a>
+         <a class="<% if(actives.includes('CarnePigi')){ %> active-item <% } %>" href="/wiki/items/raro-carne-pigi">Carne Pigi</a>
+         <a class="<% if(actives.includes('FlorDeLosAvernos')){ %> active-item <% } %>" href="/wiki/items/raro-flor-de-los-avernos">Flor De Los Avernos</a>
+         <a class="<% if(actives.includes('HachaDeVikingoAntiguo')){ %> active-item <% } %>" href="/wiki/items/raro-hacha-de-vikingo-antiguo">Hacha De Vikingo Antiguo</a>
       </div>
       <button class="dropdown-btn <% if(actives.includes('items-epicos')){ %> active-nav <% } %>">Epicos<i class="fa fa-caret-left"></i></button>
       <div class="dropdown-container <% if(actives.includes('items-epicos')){ %> active-cont <% } %>">
       </div>
       <button class="dropdown-btn <% if(actives.includes('items-legendarios')){ %> active-nav <% } %>">Legendarios<i class="fa fa-caret-left"></i></button>
       <div class="dropdown-container <% if(actives.includes('items-legendarios')){ %> active-cont <% } %>">
+         <a class="<% if(actives.includes('PolvoraMidgardiana')){ %> active-item <% } %>" href="/wiki/items/legendario-polvora-midgardiana">Polvora Midgardiana</a>
       </div>
    </div>
    <button class="dropdown-btn <% if(actives.includes('crafteos')){ %> active-nav <% } %>">Crafteos<i class="fa fa-caret-left"></i></button>
    <div class="dropdown-container <% if(actives.includes('crafteos')){ %> active-cont <% } %>">
-      <a href="#">Vaca Lola</a>
-      <a href="#">El imortal</a>
-      <a href="#">El dios del fuego</a>
-   </div>
-   <button class="dropdown-btn <% if(actives.includes('otros')){ %> active-nav <% } %>">otros<i class="fa fa-caret-left"></i></button>
-   <div class="dropdown-container <% if(actives.includes('otros')){ %> active-cont <% } %>">
-      <a href="#">Vaca Lola</a>
-      <a href="#">El imortal</a>
-      <a href="#">El dios del fuego</a>
+      
    </div>
  </div>

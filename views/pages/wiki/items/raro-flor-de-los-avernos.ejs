@@ -1,0 +1,38 @@
+<html>
+   <%- include('../../../parts/head', {title:'Bifrost Network', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "items-raros", "FlorDeLosAvernos"] }) %>
+
+      <div class="content">
+         <div class="col-md12 height-md1"></div>
+         <h1 id="item" class="col-md8 row-md1 xxfont-large font-while text-center pading-4">Flor De Los Avernos</h1>
+         <img src="/img/wiki/items/FlorDeLosAvernos/item.png" class="col-md3 row-md5 img-content" alt="">
+         <div class="col-md8 row-md4 font-medium">
+            <p class="font-while">
+               <b>Nombre:</b> Flor De Los Avernos<br><br>
+               <b>Categoria:</b> Raro<br><br>
+               <b>Lore:</b><br><img src="/img/wiki/items/FlorDeLosAvernos/lore.png" class="img-content width-75 lore" alt="lore.png">
+            </p>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Funciones del item</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Nuestros Alquimistas y armeros siguen intentando descubrir utilizar el poder de esta grandiosa Planta del los confines más Desolados.</li>
+            </ul>
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Formas de conseguirlo</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Matando a <a href="/wiki/mobs/VerdugoNordico" class="font-fff font-bold">Verdugo Nordico</a>.</li>
+            </ul>
+         </div>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>

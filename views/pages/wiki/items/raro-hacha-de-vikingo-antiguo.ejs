@@ -1,0 +1,66 @@
+<html>
+   <%- include('../../../parts/head', {title:'Bifrost Network', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "items-raros", "HachaDeVikingoAntiguo"] }) %>
+
+      <div class="content">
+         <div class="col-md12 height-md1"></div>
+         <h1 id="item" class="col-md8 row-md1 xxfont-large font-while text-center pading-4">Hacha De Vikingo Antiguo</h1>
+         <img src="/img/wiki/items/HachaDeVikingoAntiguo/item.png" class="col-md3 row-md5 img-content" alt="">
+         <div class="col-md8 row-md4 font-medium">
+            <ul class="font-while grid">
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Nombre:</b>
+                  <p class="col-md11">Hacha De Vikingo Antiguo</p>
+               </li>
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Categoria:</b>
+                  <p class="col-md11">Raro</p>
+               </li>
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Lore:</b>
+                  <img src="/img/wiki/items/HachaDeVikingoAntiguo/lore.png" class="img-content col-md7 lore" alt="lore.png">
+               </li>
+               <div class="col-md12 height-md1"></div>
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Daño:</b>
+                  <p class="col-md11">9.0 a 15.0 puntos (incluidos)</p>
+               </li>
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Armadura:</b>
+                  <p class="col-md11">+2.0 en la mano principal</p>
+               </li>
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Velociad de ataque:</b>
+                  <p class="col-md11">-80%</p>
+               </li>
+            </ul>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Funciones del item</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Arma y herramienta.</li>
+            </ul>
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Formas de conseguirlo</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Matando a <a href="/wiki/mobs/VikingoAntiguo" class="font-fff font-bold">Vikingo Antiguo</a>.</li>
+            </ul>
+         </div>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>

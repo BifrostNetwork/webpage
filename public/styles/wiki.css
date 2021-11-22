@@ -278,6 +278,10 @@ img {
    text-align: center;
 }
 
+.text-justify {
+   text-align: justify;
+}
+
 p {
    padding: 0 15px;
 }
@@ -307,11 +311,24 @@ b {
    font-size: 2em;
 }
 
+.font-fff {
+   color: #fff;
+}
 .font-while {
    color: #ddd;
 }
 .font-black {
    color: #000;
+}
+.font-gray {
+   color: #888;
+}
+.font-gold {
+   color: #ffd700;
+}
+
+.font-bold {
+   font-weight: bold;
 }
 
 .grid-col1 {
@@ -431,7 +448,10 @@ b {
    padding: 4vh;
 }
 
-
+.grid {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+}
 
 
 @media only screen and (max-width: 1024px) {

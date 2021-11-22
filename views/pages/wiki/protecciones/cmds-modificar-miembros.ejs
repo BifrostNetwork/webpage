@@ -1,0 +1,97 @@
+<html>
+   <%- include('../../../parts/head', {title:'Maestro Pigi', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["protecciones", "protecciones-cmds", "protecciones-cmds-modificar-miembros"] }) %>
+
+      <div class="content">
+         <h1 class="col-md12 row-md1 xxfont-large font-while text-center pading-4">Modificar miembros de una proteccion</h1>
+         <div class="col-md8 row-md4 font-medium">
+            <ul class="font-while grid">
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Nombre:</b>
+                  <p class="col-md11">Maestro Pigi</p>
+               </li>
+               <div class="col-md12 height-md1"></div>
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Lore:</b>
+                  <p class="col-md9 text-justify">El en antaño en otro mundo era uno de los mejores Armeros/Herreros y Hechicero realmente  no tenía rival pero al tratar de venir a este mundo sobre él cayó una maldición y adoptó esa forma.</p>
+               </li>
+               <div class="col-md12 height-md1"></div>
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Fuerza:</b>
+                  <p class="col-md11">40.0 puntos</p>
+               </li>
+               <div class="col-md1 height-md1"></div>
+               <li class="grid col-md11">
+                  <b class="col-md11">Vida:</b>
+                  <p class="col-md11">50.0 puntos</p>
+               </li>
+            </ul>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6 grid row-md1">
+            <p class="font-while font-large text-center col-md12 font-bold">Dropeos</p>
+            <div class="col-md1 height-md1"></div>
+            <ul class="font-while font-medium pading-2 col-md11">
+               <li class="grid">
+                  <b class="col-md12">Items:</b>
+                  <div class="col-md1 height-md1"></div>
+                  <ul class="col-md9">
+                     <li>De 1 a 2 <a href="/wiki/items/raro-carne-pigi" class="font-gray font-bold">Carne Pigi</a> con el 5% de probabilidad.</li>
+                  </ul>
+               </li>
+               <div class="col-md12 height-md1"></div>
+               <li class="grid">
+                  <b class="col-md12">Monedas:</b>
+                  <div class="col-md1 height-md1"></div>
+                  <ul class="col-md9">
+                     <li>De 10 a 17 <a href="/wiki/coins/silver" class="font-gray font-bold">silvers</a></li>
+                     <li>0 de <a href="/wiki/coins/gold" class="font-gold font-bold">gold</a></li>
+                     <li>De 50 a 70 puntos de experiencia</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="col-md6 grid">
+            <div class="col-md1 height-md1"></div>
+            <h2 class="font-while font-large text-center col-md11">Zonas de aparicion</h2>
+            <div class="col-md1 height-md1"></div>
+            <ul class="font-while font-medium pading-2 col-md11">
+               <li class="grid">
+                  <b class="col-md12">Biomas:</b>
+                  <div class="col-md1 height-md1"></div>
+                  <ul class="col-md9">
+                     <li>Todos</li>
+                  </ul>
+               </li>
+               <div class="col-md12 height-md1"></div>
+               <li class="grid">
+                  <b class="col-md12">Dimenciones</b>
+                  <div class="col-md1 height-md1"></div>
+                  <ul class="col-md9">
+                     <li>Overworld</li>
+                  </ul>
+               </li>
+               <div class="col-md12 height-md1"></div>
+               <li class="grid">
+                  <b class="col-md12">Condiciones</b>
+                  <div class="col-md1 height-md1"></div>
+                  <ul class="col-md9">
+                     <li>Tiene que estar sin ningun bloque por encima.</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+   <%- include('../../../parts/head', {title:'Bifrost Network', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "comunes", "items-comunes", "CueroAntiguo"] }) %>
+
+      <div class="content">
+         <div class="col-md12 height-md1"></div>
+         <h1 id="item" class="col-md8 row-md1 xxfont-large font-while text-center pading-4">Cuero Antiguo</h1>
+         <img src="/img/wiki/items/CueroAntiguo/item.png" class="col-md3 row-md5 img-content" alt="">
+         <div class="col-md8 row-md4 font-medium">
+            <p class="font-while">
+               <b>Nombre:</b> Cuero Antiguo<br><br>
+               <b>Categoria:</b> Común<br><br>
+               <b>Lore:</b><br><img src="/img/wiki/items/CueroAntiguo/lore.png" class="img-content width-50 lore" alt="lore.png">
+            </p>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Funciones del item</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Materia prima de <a href="raro-prototipo-de-armadura-casco" class="font-fff font-bold">Prototipo de casco</a>.</li><br>
+               <li>Materia prima de <a href="raro-prototipo-de-armadura-pechera" class="font-fff font-bold">Prototipo de pechera</a>.</li><br>
+               <li>Materia prima de <a href="raro-prototipo-de-armadura-pantalones" class="font-fff font-bold">Prototipo de pantalones</a>.</li><br>
+               <li>Materia prima de <a href="raro-prototipo-de-armadura-pantuflas" class="font-fff font-bold">Prototipo de pantuflas</a>.</li>
+            </ul>
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Formas de conseguirlo</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Matar vacas comúnes con el 50% de probabilidades.</li>
+            </ul>
+         </div>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>
