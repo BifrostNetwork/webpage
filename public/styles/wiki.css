@@ -326,6 +326,15 @@ b {
 .font-gold {
    color: #ffd700;
 }
+.font-red {
+   color: #f66;
+}
+.font-blue {
+   color: #66f;
+}
+.font-green {
+   color: #3c3;
+}
 
 .font-bold {
    font-weight: bold;
@@ -451,6 +460,14 @@ b {
 .grid {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
+}
+
+.code {
+   background: #444;
+   padding: 1em;
+   color: #fff;
+   border-radius: 10px;
+   width: 100%;
 }
 
 

@@ -1,0 +1,60 @@
+<html>
+   <%- include('../../../parts/head', {title:'Pigi Chestplate', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "items-epicos", "PigiChestplate"] }) %>
+
+      <div class="content">
+         <div class="col-md12 height-md1"></div>
+         <h1 id="item" class="col-md8 row-md1 xxfont-large font-while text-center pading-4">Pigi Chestplate</h1>
+         <img src="/img/wiki/items/PigiChestplate/item.png" class="col-md3 row-md5 img-content" alt="">
+         <div class="col-md8 row-md4 font-medium">
+            <p class="font-while">
+               <b>Nombre:</b> Pigi Chestplate<br><br>
+               <b>Categoria:</b> Épico<br><br>
+               <b>Lore:</b><br><img src="/img/wiki/items/PigiChestplate/lore.png" class="img-content width-50 lore" alt="lore.png">
+            </p>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Funciones del item</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Armadura.</li><br>
+            </ul>
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Formas de conseguirlo</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Crafteo.</li>
+               <li>Si sintcraft te simpea ;).</li>
+            </ul>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="height-md1 col-md12 font-fff font-xxlarge text-center">CRAFTEO</div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Materiales</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>- <a href="/wiki/items/raro-flor-de-los-avernos" class="font-green font-bold">Flor De Los Avernos</a> (X5)</li>
+               <li>- <a href="/wiki/items/raro-carne-pigi" class="font-blue font-bold">Carne pigi</a> (X3)</li>
+               <li>- <a href="/wiki/items/raro-prototipo-pechera" class="font-red font-bold">Prototipo de Pechera</a> (X1)</li>
+            </ul>
+         </div>
+         <div class="col-md4 row-md2">
+            <h2 class="font-while font-large text-center">Crafteo</h2>
+            <img src="/img/wiki/items/PigiChestplate/crafteo.png" alt="">
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Condiciones</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>- Noche, ticks del dia sean iguales o mayores a 13000</li>
+            </ul>
+         </div>
+         <div class="height-md1 col-md2"></div>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>

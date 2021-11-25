@@ -1,0 +1,38 @@
+<html>
+   <%- include('../../../parts/head', {title:'Hidro Miel', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "items-epicos", "HidroMiel"] }) %>
+
+      <div class="content">
+         <div class="col-md12 height-md1"></div>
+         <h1 id="item" class="col-md8 row-md1 xxfont-large font-while text-center pading-4">Hidro Miel</h1>
+         <img src="/img/wiki/items/HidroMiel/item.png" class="col-md3 row-md5 img-content" alt="">
+         <div class="col-md8 row-md4 font-medium">
+            <p class="font-while">
+               <b>Nombre:</b> Hidro Miel<br><br>
+               <b>Categoria:</b> Épico<br><br>
+               <b>Lore:</b><br><img src="/img/wiki/items/HidroMiel/lore.png" class="img-content width-50 lore" alt="lore.png">
+            </p>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Funciones del item</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Materia prima de <a href="epico-pigi-boots" class="font-fff font-bold">Pigi Boots</a>.</li><br>
+            </ul>
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Formas de conseguirlo</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Matando a <a href="/wiki/mobs/chikitooo" class="font-fff font-bold">Chikitooo</a></li>
+            </ul>
+         </div>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>

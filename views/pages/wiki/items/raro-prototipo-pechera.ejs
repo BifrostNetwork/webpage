@@ -1,0 +1,57 @@
+<html>
+   <%- include('../../../parts/head', {title:'Prototipo de Pechera', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["items", "items-raros", "PrototipoPechera"] }) %>
+
+      <div class="content">
+         <div class="col-md12 height-md1"></div>
+         <h1 id="item" class="col-md8 row-md1 xxfont-large font-while text-center pading-4">Prototipo de Pechera</h1>
+         <img src="/img/wiki/items/PrototipoPechera/item.png" class="col-md3 row-md5 img-content" alt="">
+         <div class="col-md8 row-md4 font-medium">
+            <p class="font-while">
+               <b>Nombre:</b> Prototipo de Pechera<br><br>
+               <b>Categoria:</b> Raro<br><br>
+               <b>Lore:</b><br><img src="/img/wiki/items/PrototipoPechera/lore.png" class="img-content width-50 lore" alt="lore.png">
+            </p>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Funciones del item</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Armadura base para mejoras.</li><br>
+            </ul>
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Formas de conseguirlo</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>Crafteo.</li>
+            </ul>
+         </div>
+         <div class="height-md1 col-md12"></div>
+         <div class="height-md1 col-md12 font-fff font-xxlarge text-center">CRAFTEO</div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Materiales</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>- <a href="/wiki/items/comun-cuero-antiguo" class="font-green font-bold">Cuero Antiguo</a> (X8)</li>
+            </ul>
+         </div>
+         <div class="col-md4 row-md2">
+            <h2 class="font-while font-large text-center">Crafteo</h2>
+            <img src="/img/wiki/items/PrototipoPechera/crafteo.png" alt="">
+         </div>
+         <div class="col-md6">
+            <h2 class="font-while font-large text-center">Condiciones</h2>
+            <ul class="font-while font-medium pading-2">
+               <li>- Noche, ticks del dia sean iguales o mayores a 13000</li>
+            </ul>
+         </div>
+         <div class="height-md1 col-md2"></div>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>
