@@ -1,4 +1,6 @@
+require('dotenv').config();
 let express = require('express');
+var mongoose = require('mongoose');
 let app = express();
 let RouterPage = require('./routers/RouterPage');
 let RouterWiki = require('./routers/RouterWiki');
@@ -11,6 +13,7 @@ app.use((req, res) => {
     res.redirect('/')
 })
 
-app.listen(6464, function () {
-    console.log('Server is running on port 3000');
+app.listen(6464, async () => {
+    await mongoose.connect(process.env.mongo_uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    console.log('Server is running on port 6464');
 });

@@ -1,0 +1,49 @@
+<html>
+   <%- include('../parts/head', {title:'Bifrost | Ticket', styles:'<link rel="stylesheet" href="/styles/ticket.css">'}) %>
+   <body>
+      <%- include('../parts/navbar', {active}) %>
+
+      <div class="content">
+         <div class="files">
+            <% for(img of files.images) { %>
+               <div class="img">
+                  <img src="<%= img.url %>" alt="" onclick="openImg(this)">
+                  <p><%= img.author %> - <b class="date"><%= img.date %></b></p>
+               </div>
+            <% } %>
+            <% for(oth of files.others) { %>
+               <div class="otro">
+                  <a href="<%= oth.url %>">Archivo no reconocido (<%= oth.url.split('.').pop() %>)</a>
+                  <p><%= oth.author %> - <b class="date"><%= oth.date %></b></p>
+               </div>
+            <% } %>
+            <% for(vid of files.videos) { %>
+               <div class="video">
+                  <video controls>
+                     <source src="<%= vid.url %>" type="video/mp4">
+                  </video>
+                  <p><%= vid.author %> - <b class="date"><%= vid.date %></b></p>
+               </div>
+            <% } %>
+            <% for(aud of files.audios) { %>
+               <div class="audio">
+                  <audio controls>
+                     <source src="<%= aud.url %>" type="audio/mpeg">
+                  </audio>
+                  <p><%= aud.author %> - <b class="date"><%= aud.date %></b></p>
+               </div>
+            <% } %>
+         </div>
+         <div class="messages">
+            <h2>Mensajes</h2>
+            <% for(msg of messages) {%>
+               <p><b class="date"><%= msg.date %></b><b><%= msg.author %>:</b><%= msg.content %></p>
+            <% } %>
+         </div>
+      </div>
+
+      
+      <%- include('../parts/footer') %>
+      <script src="/js/ticket.js"></script>
+   </body>
+</html>

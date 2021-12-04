@@ -1,0 +1,69 @@
+.content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.messages {
+   padding: 20px;
+}
+
+.messages h2 {
+   font-size: 3em;
+   text-align: center;
+   text-shadow: 0 0 10px #0f0;
+   color: #fff;
+}
+
+.messages p {
+   margin: 1em 0;
+   color: #fff;
+}
+
+.messages p b {
+   margin: 0 .7em 0 0;
+   color: #ddd;
+}
+.messages p .date {
+   color: #555;
+}
+
+.files {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 20px;
+   padding: 20px;
+}
+
+.files > *{
+   width: 100%;
+   height: 100%;
+   background: #ffd700;
+   border-radius: 5px;
+   padding: 7px;
+}
+.img img {
+   width: 100%;
+   height: 20vh;
+   object-fit: contain;
+   transition: .3s;
+   background: rgba(0,0,0,0.2);
+   margin-bottom: 1em;
+   cursor: pointer;
+}
+.img img:hover {
+   transform: scale(1.05);
+}
+
+.video {
+   grid-column: auto / span 2;
+}
+.video video {
+   width: 100%;
+}
+
+.audio {
+   grid-column: auto / span 2;
+}
+.audio audio {
+   width: 100%;
+}
