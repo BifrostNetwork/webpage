@@ -1,0 +1,40 @@
+<html>
+   <%- include('../../../parts/head', {title:'End', styles:'<link rel="stylesheet" href="/styles/wiki.css">'}) %>
+   <body>
+      <%- include('../../../parts/navbar', {active: 'wiki'}) %>
+      
+      <%- include('../../../parts/wiki/wikiNav', { actives: ["dimensions", "the_end"] }) %>
+
+      <div class="content">
+         <div class="col-md12 height-md1"></div>
+         <h1 class="col-md12 row-md1 xxfont-large font-while text-center pading-4">El END</h1>
+         <div class="col-md6 row-md2 grid">
+            <h2 class="text-center font-while col-md12">Características</h2>
+            <ul class="col-md12 font-gray font-small pading-2">
+               <li>Limite inicial 15000 bloques</li><br>
+               <li>Generacion vanilla</li><br>
+               <li>Todos los end crystals al ser golpeados explotan, y encierran al que dio el golpe en una jaula</li><br>
+               <li>Dragon del end cambiado por el <a href="#dragon-bifrost" class="font-blue">Dragon del Bifrost</a></li>
+            </ul>
+         </div>
+         <div class="col-md6 row-md1 grid">
+            <h2 class="text-center font-while col-md12">Accesos</h2>
+            <ul class="col-md12 font-gray font-small pading-2">
+               <li>Cualquier portal en las stromholl</li><br>
+               <li>Portal ubicado en el spawn</li>
+            </ul>
+         </div>
+         <div class="col-md6 row-md1 grid">
+            <h2 class="text-center font-while col-md12">Accesos</h2>
+            <ul class="col-md12 font-gray font-small pading-2">
+               <li>Cualquier portal en las stromholl</li><br>
+               <li>Portal ubicado en el spawn</li>
+            </ul>
+         </div>
+      </div>
+      
+      <%- include('../../../parts/footer') %>
+      <script src="/js/main.js"></script>
+      <script src="/js/wiki.js"></script>
+   </body>
+</html>
